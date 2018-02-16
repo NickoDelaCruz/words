@@ -5,6 +5,9 @@ require('pry')
 require('./lib/words')
 
 get('/') do
+end
+
+get('/') do
   @list = Word.all()
   erb(:input)
 end
