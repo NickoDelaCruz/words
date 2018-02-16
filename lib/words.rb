@@ -1,3 +1,25 @@
+class Address
+  @@own_list = []
+
+  attr_accessor :own
+
+  def initialize(attributes)
+    @own = attributes.fetch(:own)
+  end
+
+  def self.all()
+    @@own_list
+  end
+
+  def self.clear()
+    @@own_list = []
+  end
+
+  def save()
+    @@own_list.push(self)
+  end
+end
+
 class Word
   @@list = []
 

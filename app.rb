@@ -23,3 +23,16 @@ get('/output/:id') do
   @contact = Word.find(params[:id])
   erb(:output)
 end
+
+post('/output') do
+  own = params["own"]
+  address = Address.new({:own=> own})
+  address.save()
+  @own_list = Address.all()
+  erb(:address)
+end
+
+get('/address') do
+  @own_list = Address.all()
+  erb(:address)
+end
