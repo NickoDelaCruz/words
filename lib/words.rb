@@ -1,30 +1,26 @@
-#!/usr/bin/ruby
-
-class Contact
+class Word
   @@list = []
 
   attr_accessor :word, :define
-
   attr_reader :id
 
   def initialize(attributes)
-    @first = attributes.fetch(:first)
-    @last = attributes.fetch(:last)
-    @title = attributes.fetch(:title)
-    @company = attributes.fetch(:company)
+    @word = attributes.fetch(:word)
+    @define = attributes.fetch(:define)
     @id = @@list.length + 1
   end
 
-  def self.all()
-    @@list
-  end
 
-  def self.clear()
-    @@list = []
+  def self.all
+    @@list
   end
 
   def save()
     @@list.push(self)
+  end
+
+  def self.clear()
+    @@list=[]
   end
 
   def self.find(id)
@@ -35,5 +31,4 @@ class Contact
       end
     end
   end
-
 end
