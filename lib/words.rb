@@ -18,7 +18,16 @@ class Address
   def save()
     @@own_list.push(self)
   end
+
+def self.find(id)
+  address_id = id.to_i()
+  @@own_list.each do |address|
+    if address.id == address_id
+      return contact
+    end
+  end
 end
+
 
 class Word
   @@list = []
