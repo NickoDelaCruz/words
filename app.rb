@@ -4,8 +4,6 @@ also_reload('lib/**.*.rb')
 require('pry')
 require('./lib/words')
 
-get('/') do
-end
 
 get('/') do
   @list = Word.all()
