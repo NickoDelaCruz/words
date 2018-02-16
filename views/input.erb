@@ -1,0 +1,17 @@
+<% @list.each do |contact| %>
+<h4><a href="/output/<%= contact.id %>"><%= contact.word + "| | " + contact.define %></a></h4>
+<% end %>
+
+<h2>Add a word</h2>
+
+  <form action="/" method="post">
+    <div class="form-group">
+      <label for="word">Word:</label>
+      <input id="word" name="word" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="define">Definition:</label>
+      <input id="define" name="define" class="form-control" type="text">
+    </div>
+    <button type="submit" class="btn-primary">Go!</button>
+  </form>
