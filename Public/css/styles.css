@@ -1,8 +1,13 @@
 h1 {
   color: red;
-
 }
 
-background {
-  color:blue;
+body {
+   background-image: url("https://media3.giphy.com/media/WoWm8YzFQJg5i/giphy.gif");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+}
+
+a {
+    color:red;
 }
