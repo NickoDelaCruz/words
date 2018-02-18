@@ -26,13 +26,13 @@ end
 
 post('/output') do
   own = params["own"]
-  address = Address.new({:own=> own})
+  address = Definitions.new({:own=> own})
   address.save()
-  @own_list = Address.all()
-  erb(:address)
+  @own_list = Definitions.all()
+  erb(:dictionary)
 end
 
-get('/address') do
-  @own_list = Address.all()
-  erb(:address)
+get('/dictionary') do
+  @own_list = Definitions.all()
+  erb(:dictionary)
 end

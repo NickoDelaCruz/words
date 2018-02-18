@@ -1,4 +1,4 @@
-class Address
+class Definitions
   @@own_list = []
 
   attr_accessor :own
