@@ -18,13 +18,7 @@ $ ruby app.rb
 Enjoy
 
 ## Heroku
-
-N/A
-
-I'm having compatibility issues with my Windows PC.
-Getting a gemlock file error due to bundle installing using Windows
-
-In addition Git Bash and several other command lines are note compatible with heroku
+https://dry-spire-36700.herokuapp.com/
 
 ## Specs
 
